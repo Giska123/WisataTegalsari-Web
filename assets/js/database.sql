@@ -1,0 +1,10 @@
+CREATE DATABASE tegalsari_news;
+USE tegalsari_news;
+ 
+CREATE TABLE berita(
+berita_id INT PRIMARY KEY AUTO_INCREMENT,
+judul VARCHAR(150),
+tanggal TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+image VARCHAR(40),
+isi TEXT
+)ENGINE INNODB;
